@@ -57,6 +57,27 @@
     a {
       color: #93c5fd;
     }
+    /* ▼ 過去7日間ヒストリー用の簡易スタイル */
+    .history-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 8px 0 0;
+      font-size: 0.9rem;
+    }
+    .history-list li {
+      margin-bottom: 4px;
+    }
+    .history-list a {
+      color: #e5e7eb;
+      text-decoration: none;
+    }
+    .history-list a span {
+      margin: 0 4px;
+    }
+    .history-list a:hover {
+      color: #93c5fd;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -66,6 +87,22 @@
   </header>
 
   <main>
+    <!-- HISTORY_REPORT_START -->
+    <section class="card">
+      <h2>過去7日間のランサムウェア天気</h2>
+      <p>まだアーカイブされた日次レポートがありません。</p>
+      <!--
+        update_ransomweather.py がここを自動で差し替えます。
+        例：
+        <ul class="history-list">
+          <li><a href="reports/2025-12-10-no-incident.html">2025-12-10 <span>☀</span> 日本関連の新規被害なし</a></li>
+          <li><a href="reports/2025-12-09-incident.html">2025-12-09 <span>⛈</span> 製造業を狙った被害が複数主張</a></li>
+          ...
+        </ul>
+      -->
+    </section>
+    <!-- HISTORY_REPORT_END -->
+
     <!-- DAILY_REPORT_START -->
 <section class="card">
   <h2>本日のランサムウェア天気 <span>☀</span></h2>
@@ -75,7 +112,7 @@
 ・現時点で日本関連の新たなランサムウェア被害は確認されていないとされています。<br>
 <br>
 現時点では大きな動きは見られていないものの、攻撃自体は継続していると見られており、<br>
-基本的なバックアップやアクセス権限管理などの対策は引き続き重要とされています。<br>
+基本的なバック업やアクセス権限管理などの対策は引き続き重要とされています。<br>
 <br>
 #ランサムウェア #セキュリティ #RansomWeatherJP
   </p>
