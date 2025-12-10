@@ -57,26 +57,59 @@
     a {
       color: #93c5fd;
     }
-    /* ▼ 過去7日間ヒストリー用の簡易スタイル */
-    .history-list {
-      list-style: none;
-      padding-left: 0;
-      margin: 8px 0 0;
-      font-size: 0.9rem;
+
+    /* ▼ 過去7日間ヒストリー用スタイル（タイル型予報） */
+    .history-card h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
     }
-    .history-list li {
-      margin-bottom: 4px;
+    .history-forecast {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 8px;
+      margin-top: 8px;
     }
-    .history-list a {
-      color: #e5e7eb;
+    .history-day {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 4px;
+      border-radius: 10px;
       text-decoration: none;
+      border: 1px solid #1f2937;
+      transition: transform 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
     }
-    .history-list a span {
-      margin: 0 4px;
+    .history-day:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(15,23,42,0.7);
+      border-color: #4b5563;
     }
-    .history-list a:hover {
-      color: #93c5fd;
-      text-decoration: underline;
+    .history-day-date {
+      font-size: 0.8rem;
+      color: #e5e7eb;
+    }
+    .history-day-icon {
+      font-size: 1.4rem;
+      margin: 4px 0;
+    }
+    .history-day-label {
+      font-size: 0.75rem;
+      color: #cbd5f5;
+      text-align: center;
+      line-height: 1.3;
+    }
+    .history-day.sunny {
+      background: radial-gradient(circle at top, #facc15 0, #f97316 40%, #0f172a 100%);
+    }
+    .history-day.cloudy {
+      background: radial-gradient(circle at top, #9ca3af 0, #4b5563 40%, #0f172a 100%);
+    }
+    .history-day.rainy {
+      background: radial-gradient(circle at top, #38bdf8 0, #0ea5e9 40%, #0f172a 100%);
+    }
+    .history-day.storm {
+      background: radial-gradient(circle at top, #f97316 0, #b91c1c 40%, #0f172a 100%);
     }
   </style>
 </head>
@@ -88,19 +121,25 @@
 
   <main>
     <!-- HISTORY_REPORT_START -->
-<section class="card">
-  <h2>過去7日間のランサムウェア天気</h2>
-  <ul class="history-list">
-    <li><a href="reports/2025-12-10-no-incident.html">2025年12月10日 <span>☀</span> 新規被害なし</a></li>
-  </ul>
-</section>
-<!-- HISTORY_REPORT_END -->
+    <section class="card history-card">
+      <h2>過去7日間のランサムウェア天気</h2>
+      <div class="history-forecast">
+        <!-- ここはプレースホルダ。実運用では update_ransomweather.py が
+             reports ディレクトリを読み込んで自動生成したタイル群に置き換える -->
+        <a class="history-day sunny" href="reports/2025-12-10-no-incident.html">
+          <div class="history-day-date">10(水)</div>
+          <div class="history-day-icon">☀</div>
+          <div class="history-day-label">新規被害なし</div>
+        </a>
+      </div>
+    </section>
+    <!-- HISTORY_REPORT_END -->
 
     <!-- DAILY_REPORT_START -->
-<section class="card">
-  <h2>本日のランサムウェア天気 <span>☀</span></h2>
-  <p>2025年12月10日時点の観測では、日本関連の新たなランサムウェア被害は確認されていません。</p>
-  <p>
+    <section class="card">
+      <h2>本日のランサムウェア天気 <span>☀</span></h2>
+      <p>2025年12月10日時点の観測では、日本関連の新たなランサムウェア被害は確認されていません。</p>
+      <p>
 検知されたランサムウェア被害（攻撃者の主張ベース）<br>
 ・現時点で日本関連の新たなランサムウェア被害は確認されていないとされています。<br>
 <br>
@@ -108,13 +147,13 @@
 基本的なバックアップやアクセス権限管理などの対策は引き続き重要とされています。<br>
 <br>
 #ランサムウェア #セキュリティ #RansomWeatherJP
-  </p>
-  <div class="footer-note">
-    ※ 本ページの内容は公開 OSINT および攻撃者サイトの主張ベースの情報を AI で自動分析したものであり、
-    事実関係が確定したものではありません。断定ではなく、あくまで注意喚起としてご覧ください。
-  </div>
-</section>
-<!-- DAILY_REPORT_END -->
+      </p>
+      <div class="footer-note">
+        ※ 本ページの内容は公開 OSINT および攻撃者サイトの主張ベースの情報を AI で自動分析したものであり、
+        事実関係が確定したものではありません。断定ではなく、あくまで注意喚起としてご覧ください。
+      </div>
+    </section>
+    <!-- DAILY_REPORT_END -->
 
     <section class="card">
       <h3>このプロジェクトについて</h3>
