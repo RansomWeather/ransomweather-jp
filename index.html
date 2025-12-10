@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>RansomWeather Japan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      padding: 24px 16px;
+      text-align: center;
+      background: #020617;
+      border-bottom: 1px solid #1f2937;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 12px;
+      padding: 20px;
+      border: 1px solid #1f2937;
+      margin-bottom: 16px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      background: #1f2937;
+      color: #e5e7eb;
+      margin-right: 6px;
+    }
+    .footer-note {
+      font-size: 0.75rem;
+      color: #6b7280;
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+    a {
+      color: #93c5fd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RansomWeather Japan</h1>
+    <p>日本国内のランサムウェア被害をもとにした「ランサムウェア天気」ダッシュボード</p>
+  </header>
+
+  <main>
+    <!-- DAILY_REPORT_START -->
+    <section class="card">
+      <h2>本日のランサムウェア天気 <span>⛈</span></h2>
+      <p>2025年12月06日時点のサンプル表示です。（後で自動更新に差し替え）</p>
+      <p>製造業の中核企業を狙ったとされる事案が続いていると見られており、サプライチェーン全体への波及リスクが懸念されています。</p>
+      <div class="footer-note">
+        ※ 本ページの内容は公開OSINTおよび攻撃者サイトの主張ベースの情報をAIで自動分析したものであり、
+        事実関係が確定したものではありません。断定ではなく、あくまで注意喚起としてご覧ください。
+      </div>
+    </section>
+    <!-- DAILY_REPORT_END -->
+
+    <section class="card">
+      <h3>このプロジェクトについて</h3>
+      <p>RansomWeather Japan は、日本国内のランサムウェア動向を「天気予報」のように直感的に把握できるようにする個人プロジェクトです。</p>
+      <ul>
+        <li>公開OSINTと攻撃者サイトの主張を収集・整理</li>
+        <li>日本関連被害を抽出し、AIでリスク評価</li>
+        <li>日次で「ランサムウェア天気」として可視化</li>
+      </ul>
+      <p class="footer-note">
+        Twitter: <a href="https://x.com/RansomWeatherJP" target="_blank">@RansomWeatherJP</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h3>免責事項 / Disclaimer</h3>
+      <p class="footer-note">
+        本サイトは研究・教育・注意喚起を目的としており、特定の企業・団体・個人を批判・非難するものではありません。
+        情報は正確性を保証するものではなく、最新の公式発表や一次ソースの確認を推奨します。
+      </p>
+    </section>
+  </main>
+</body>
+</html>
