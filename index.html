@@ -126,11 +126,6 @@
 <section class="card history-card">
       <h2>過去7日間のランサムウェア天気</h2>
       <div class="history-forecast">
-        <a class="history-day sunny" href="reports/2025-12-18-no-incident.html">
-          <div class="history-day-date">18(木)</div>
-          <div class="history-day-icon">☀</div>
-          <div class="history-day-label">新規被害なし</div>
-        </a>
         <a class="history-day sunny" href="reports/2025-12-19-no-incident.html">
           <div class="history-day-date">19(金)</div>
           <div class="history-day-icon">☀</div>
@@ -156,25 +151,43 @@
           <div class="history-day-icon">☀</div>
           <div class="history-day-label">新規被害なし</div>
         </a>
+        <a class="history-day cloudy" href="reports/2025-12-24-ransomweather.html">
+          <div class="history-day-date">24(水)</div>
+          <div class="history-day-icon">☁</div>
+          <div class="history-day-label">落ち着いた状態</div>
+        </a>
       </div>
     </section>
 <!-- HISTORY_REPORT_END -->
 
     <!-- DAILY_REPORT_START -->
 <section class="card">
-  <h2>本日のランサムウェア天気 <span>☀</span></h2>
-  <p>2025年12月23日時点の観測では、日本関連の新たなランサムウェア被害は確認されていません。</p>
-  <p>
-検知されたランサムウェア被害（攻撃者の主張ベース）<br>
-・現時点で日本関連の新たなランサムウェア被害は確認されていないとされています。<br>
-<br>
-現時点では大きな動きは見られていないものの、攻撃は継続していると見られており、<br>
-基本的なバックアップやアクセス権限管理などの対策は引き続き重要とされています。
-  </p>
-  <div class="footer-note">
-    ※ 本ページの内容は公開 OSINT および攻撃者サイトの主張ベースの情報を AI で自動分析したものであり、
-    事実関係が確定したものではありません。断定ではなく、あくまで注意喚起としてご覧ください。
-  </div>
+  <h2>本日のランサムウェア天気 ☁</h2>
+  <p>2025年12月24日現在、日本のランサムウェア天気は「くもり」と見られています。日本本社を持つ映像制作会社への被害主張が確認されており、引き続き警戒が必要です。</p>
+</section>
+
+<section class="card">
+  <h3>日本関連の被害主張（2025年12月24日時点）</h3>
+  <ul>
+    <li><strong>OMNIBUS JAPAN INC.</strong> (omnibusjp.com)
+      <ul>
+        <li><strong>業種:</strong> 映像制作</li>
+        <li><strong>攻撃グループ:</strong> Lynx</li>
+        <li><strong>主張される影響:</strong> ランサムウェア攻撃を受けたとされるが、具体的な被害内容は不明。</li>
+        <li><em>※これらは攻撃者サイト上で主張されている内容であり、事実関係は確認中です。</em></li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section class="card">
+  <h3>Threat Intelligence Analyst の視点</h3>
+  <h4>What it means (現状の分析)</h4>
+  <p>2025年12月24日時点の観測では、日本本社を置く映像制作会社がランサムウェア攻撃の被害を主張されていることが確認されました。これは、特定の業種に限定されず、日本企業が引き続きランサムウェア攻撃の標的となっている可能性を示唆しています。現時点では広範囲な影響は確認されておらず、天気は「くもり」と評価されますが、潜在的な脅威は継続していると見られます。</p>
+  <h4>So what (それが意味すること)</h4>
+  <p>今回の事例は、企業規模や業種に関わらず、ランサムウェア攻撃のリスクが存在することを示しています。特に、サプライチェーンを構成する中小企業や、特定の技術・サービスを提供する企業が狙われることで、関連する大企業や取引先にも影響が波及する懸念があります。データ流出や業務停止は、企業の信頼性や事業継続に深刻な打撃を与える可能性があります。</p>
+  <h4>What to do (推奨される対策)</h4>
+  <p>このような状況下で企業が取るべき対策は多岐にわたります。まず、不正アクセスを防ぐための「多要素認証」の導入と徹底、そして不要な「アクセス権限」の最小化は不可欠です。万が一の事態に備え、定期的な「バックアップ」の取得とその復旧テストも重要です。また、攻撃の早期発見のためには、システムログの「ログ監査」を継続的に行い、異常な挙動を検知する体制を強化する必要があります。さらに、「取引先経由の侵入」リスクを考慮し、サプライチェーン全体のセキュリティ対策を見直すことも推奨されます。基本的なセキュリティ対策の継続と強化が、ランサムウェア被害を最小限に抑える鍵となります。</p>
 </section>
 <!-- DAILY_REPORT_END -->
 
