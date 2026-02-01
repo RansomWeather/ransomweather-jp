@@ -126,11 +126,6 @@
 <section class="card history-card">
       <h2>過去7日間のランサムウェア天気</h2>
       <div class="history-forecast">
-        <a class="history-day sunny" href="reports/2026-01-27-no-incident.html">
-          <div class="history-day-date">27(火)</div>
-          <div class="history-day-icon">☀</div>
-          <div class="history-day-label">新規被害なし</div>
-        </a>
         <a class="history-day sunny" href="reports/2026-01-28-no-incident.html">
           <div class="history-day-date">28(水)</div>
           <div class="history-day-icon">☀</div>
@@ -156,25 +151,48 @@
           <div class="history-day-icon">☀</div>
           <div class="history-day-label">新規被害なし</div>
         </a>
+        <a class="history-day rainy" href="reports/2026-02-02-ransomweather.html">
+          <div class="history-day-date">2(月)</div>
+          <div class="history-day-icon">🌧</div>
+          <div class="history-day-label">注意が必要</div>
+        </a>
       </div>
     </section>
 <!-- HISTORY_REPORT_END -->
 
     <!-- DAILY_REPORT_START -->
 <section class="card">
-  <h2>本日のランサムウェア天気 <span>☀</span></h2>
-  <p>2026年02月01日時点の観測では、日本関連の新たなランサムウェア被害は確認されていません。</p>
-  <p>
-検知されたランサムウェア被害（攻撃者の主張ベース）<br>
-・現時点で日本関連の新たなランサムウェア被害は確認されていないとされています。<br>
-<br>
-現時点では大きな動きは見られていないものの、攻撃は継続していると見られており、<br>
-基本的なバックアップやアクセス権限管理などの対策は引き続き重要とされています。
-  </p>
-  <div class="footer-note">
-    ※ 本ページの内容は公開 OSINT および攻撃者サイトの主張ベースの情報を AI で自動分析したものであり、
-    事実関係が確定したものではありません。断定ではなく、あくまで注意喚起としてご覧ください。
-  </div>
+  <h2>本日のランサムウェア天気 🌧</h2>
+  <p>2026年02月02日現在、日本のランサムウェア天気は「雨」と見られています。日本関連企業に対する被害主張が複数確認されており、特に製造業において高インパクトな事案が報告されています。広範囲での警戒と対策の強化が求められる状況です。</p>
+</section>
+<section class="card">
+  <h2>日本関連の被害主張（2026年02月02日時点）</h2>
+  <p>攻撃者サイト上で主張されている日本関連の被害は以下の通りです。これらの情報は攻撃者側の主張に基づくものであり、事実関係は確認中です。</p>
+  <ul>
+    <li>
+      <h3>Shinwa Co Ltd (建設業)</h3>
+      <ul>
+        <li>攻撃グループ: Everest</li>
+        <li>主張される影響: 業務データや個人情報の窃取</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Hosowaka Micron Group (製造業)</h3>
+      <ul>
+        <li>攻撃グループ: Everest</li>
+        <li>主張される影響: 業務データ、技術情報、個人情報の窃取</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+<section class="card">
+  <h2>Threat Intelligence Analyst の視点</h2>
+  <h3>What it means</h3>
+  <p>2026年02月02日時点の観測では、日本関連企業に対するランサムウェア攻撃の主張が複数確認されており、日本のランサムウェア天気は「雨」の様相を呈しています。特に製造業と建設業といった異なる業種で被害が主張されており、特定の業種に限定されない広範な標的化が示唆されています。同一の攻撃グループ「Everest」が関与していると見られることから、このグループによる日本企業への継続的な関心が懸念されます。</p>
+  <h3>So what</h3>
+  <p>これらの攻撃は、企業の機密情報や個人情報の窃取、業務停止といった深刻な影響をもたらす可能性があります。特に製造業においては、技術情報の流出が競争力に直結するため、その影響は甚大です。また、サプライチェーンを介した攻撃の可能性も考慮する必要があり、取引先経由での侵入リスクにも注意が必要です。</p>
+  <h3>What to do</h3>
+  <p>このような状況下では、基本的なサイバーセキュリティ対策の徹底が不可欠です。具体的には、多要素認証（MFA）の導入によるアクセス権限の強化、定期的なバックアップと復旧手順の確認、そして不審なメールやリンクに対する従業員の意識向上トレーニングが重要です。また、ログ監査を継続的に実施し、異常な挙動を早期に検知できる体制を整えることも求められます。攻撃グループの動向を注視し、最新の脅威情報に基づいた対策を講じることが、被害を最小限に抑える鍵となります。</p>
 </section>
 <!-- DAILY_REPORT_END -->
 
