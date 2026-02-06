@@ -126,11 +126,6 @@
 <section class="card history-card">
       <h2>過去7日間のランサムウェア天気</h2>
       <div class="history-forecast">
-        <a class="history-day sunny" href="reports/2026-02-01-no-incident.html">
-          <div class="history-day-date">1(日)</div>
-          <div class="history-day-icon">☀</div>
-          <div class="history-day-label">新規被害なし</div>
-        </a>
         <a class="history-day rainy" href="reports/2026-02-02-ransomweather.html">
           <div class="history-day-date">2(月)</div>
           <div class="history-day-icon">🌧</div>
@@ -156,6 +151,11 @@
           <div class="history-day-icon">☁</div>
           <div class="history-day-label">落ち着いた状態</div>
         </a>
+        <a class="history-day cloudy" href="reports/2026-02-07-ransomweather.html">
+          <div class="history-day-date">7(土)</div>
+          <div class="history-day-icon">☁</div>
+          <div class="history-day-label">落ち着いた状態</div>
+        </a>
       </div>
     </section>
 <!-- HISTORY_REPORT_END -->
@@ -163,29 +163,24 @@
     <!-- DAILY_REPORT_START -->
 <section class="card">
   <h2>本日のランサムウェア天気 ☁</h2>
-  <p>2026年02月06日現在、日本のランサムウェア天気は「くもり」と見られています。日本関連の被害主張が1件確認されており、引き続き警戒が必要です。</p>
+  <p>2026年02月07日現在、日本のランサムウェア天気は「くもり」と見られています。日本関連の被害主張が複数確認されており、引き続き警戒が必要です。</p>
 </section>
-
 <section class="card">
-  <h3>日本関連の被害主張（2026年02月06日時点）</h3>
+  <h2>日本関連の被害主張（攻撃者サイト上の情報）</h2>
   <ul>
-    <li><strong>AOT Japan</strong> (運輸業): Incransomグループがデータ窃取を主張していると見られます。日本本社とされており、中程度のインパクトが懸念されます。</li>
+    <li><strong>Nishiyama Seisakusho</strong>: 製造業。日本本社を持つ企業で、TheGentlemenによる被害主張が確認されています。</li>
+    <li><strong>TMPartner</strong>: 業種不明。Tridentlockerによる被害主張が確認されていますが、日本との直接的な関係は弱いと見られています。</li>
   </ul>
-  <p class="note">※ これらの情報は攻撃者サイト上で主張されている内容であり、事実関係は完全に確認されたものではありません。</p>
+  <p>※これらの情報は攻撃者サイト上で主張されている内容であり、事実関係が完全に確認されたものとは限りません。</p>
 </section>
-
 <section class="card">
-  <h3>アナリストの視点</h3>
-  <p><strong>What it means:</strong> 日本関連の企業に対するランサムウェア攻撃の主張が確認されました。今回は運輸業の企業が標的とされており、特定の業種が継続的に狙われる傾向が示唆されています。攻撃グループはIncransomとされており、データ窃取を伴う二重恐喝の手法が用いられている可能性が高いと見られます。</p>
-  <p><strong>So what:</strong> 運輸業はサプライチェーンの要であり、被害が確認された場合、広範囲に影響が及ぶ可能性があります。また、日本本社とされていることから、国内の事業活動への影響も懸念されます。攻撃者は常に新たな標的を探しており、業種を問わず警戒が必要です。</p>
-  <p><strong>What to do:</strong></p>
-  <ul>
-    <li><strong>アクセス権限の厳格化:</strong> 不要なアクセス権限を最小限に抑え、特に特権アカウントの管理を徹底してください。</li>
-    <li><strong>多要素認証 (MFA) の導入:</strong> 外部からのアクセスや重要なシステムへのログインには、MFAを必須とすることで不正アクセスリスクを大幅に低減できます。</li>
-    <li><strong>バックアップ戦略の再確認:</strong> 定期的なバックアップの実施と、オフライン/オフサイトでの保管を徹底し、有事の際の復旧計画を確立してください。</li>
-    <li><strong>取引先との連携強化:</strong> サプライチェーンを介した攻撃も増加傾向にあります。取引先とのセキュリティ連携を強化し、リスク情報を共有する体制を構築することが重要です。</li>
-    <li><strong>ログ監査と監視:</strong> 不審な活動を早期に検知するため、システムログの継続的な監査と監視体制を強化してください。</li>
-  </ul>
+  <h2>Threat Intelligence Analyst の視点</h2>
+  <h3>What it means (現状の分析)</h3>
+  <p>日本関連のランサムウェア被害主張が散見され、特に製造業への影響が懸念されます。攻撃グループは多様化しており、特定の業種に限定されない標的化の傾向が示唆されています。</p>
+  <h3>So what (それが意味すること)</h3>
+  <p>「くもり」の天気は、潜在的な脅威が広がりつつある状況を示唆しています。直接的な混乱には至っていないものの、いつ「雨」に変わってもおかしくない状況です。サプライチェーンを介した攻撃や、中小企業を狙った攻撃も継続していると見られます。</p>
+  <h3>What to do (推奨される対策)</h3>
+  <p>基本的なセキュリティ対策の徹底が引き続き重要です。特に、<strong>多要素認証</strong>の導入、定期的な<strong>バックアップ</strong>の実施と復旧テスト、そして不要な<strong>アクセス権限</strong>の最小化は必須です。また、取引先経由の侵入リスクを考慮し、サプライチェーン全体のセキュリティ強化にも目を向けるべきです。異常を早期に検知できるよう、<strong>ログ監査</strong>の体制を強化し、インシデント発生時の対応計画を定期的に見直すことが推奨されます。</p>
 </section>
 <!-- DAILY_REPORT_END -->
 
