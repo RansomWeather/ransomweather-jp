@@ -126,11 +126,6 @@
 <section class="card history-card">
       <h2>過去7日間のランサムウェア天気</h2>
       <div class="history-forecast">
-        <a class="history-day sunny" href="reports/2026-03-15-no-incident.html">
-          <div class="history-day-date">15(日)</div>
-          <div class="history-day-icon">☀</div>
-          <div class="history-day-label">新規被害なし</div>
-        </a>
         <a class="history-day sunny" href="reports/2026-03-16-no-incident.html">
           <div class="history-day-date">16(月)</div>
           <div class="history-day-icon">☀</div>
@@ -156,25 +151,38 @@
           <div class="history-day-icon">☀</div>
           <div class="history-day-label">新規被害なし</div>
         </a>
+        <a class="history-day cloudy" href="reports/2026-03-21-ransomweather.html">
+          <div class="history-day-date">21(土)</div>
+          <div class="history-day-icon">☁</div>
+          <div class="history-day-label">落ち着いた状態</div>
+        </a>
       </div>
     </section>
 <!-- HISTORY_REPORT_END -->
 
     <!-- DAILY_REPORT_START -->
 <section class="card">
-  <h2>本日のランサムウェア天気 <span>☀</span></h2>
-  <p>2026年03月20日時点の観測では、日本関連の新たなランサムウェア被害は確認されていません。</p>
-  <p>
-検知されたランサムウェア被害（攻撃者の主張ベース）<br>
-・現時点で日本関連の新たなランサムウェア被害は確認されていないとされています。<br>
-<br>
-現時点では大きな動きは見られていないものの、攻撃は継続していると見られており、<br>
-基本的なバックアップやアクセス権限管理などの対策は引き続き重要とされています。
-  </p>
-  <div class="footer-note">
-    ※ 本ページの内容は公開 OSINT および攻撃者サイトの主張ベースの情報を AI で自動分析したものであり、
-    事実関係が確定したものではありません。断定ではなく、あくまで注意喚起としてご覧ください。
-  </div>
+  <h2>本日のランサムウェア天気 ☁</h2>
+  <p>2026年03月21日現在、日本のランサムウェア天気は「くもり」と見られています。日本関連の被害主張が複数確認されており、引き続き注意が必要です。</p>
+</section>
+
+<section class="card">
+  <h3>日本関連の被害主張（攻撃者サイトより）</h3>
+  <p>攻撃者サイト上で主張されている日本関連の被害は以下の通りです。これらは攻撃者側の主張であり、事実関係は確認中のものも含まれます。</p>
+  <ul>
+    <li><strong>TSN Co., Ltd.</strong> (tsn-net.co.jp): ITサービス業。WorldLeaksグループによる被害主張。日本本社を持つ企業であり、サプライチェーンへの影響も懸念されます。</li>
+    <li><strong>sopower.com</strong> (sopower.com): 電力・エネルギー業。Dragonforceグループによる被害主張。日本との関係は比較的弱いと見られますが、関連企業への影響には注意が必要です。</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h3>Threat Intelligence Analyst の視点</h3>
+  <h4>1. What it means (現状の解釈)</h4>
+  <p>本日の観測では、日本関連の企業に対するランサムウェア攻撃の主張が複数確認されており、特に日本本社を持つITサービス企業が標的とされたことは注目すべき点です。これは、特定の業種に限定されず、サプライチェーンを介した攻撃の可能性も示唆しています。全体としては「くもり」の状況であり、広範囲での警戒が必要な段階にあると見られます。</p>
+  <h4>2. So what (それが意味すること)</h4>
+  <p>ITサービス企業への攻撃は、その顧客企業にも影響が波及するリスクを内包しています。攻撃者は、企業の規模や業種を問わず、脆弱性のあるシステムや不十分なセキュリティ対策を持つ組織を狙っていると考えられます。また、日本との関係が弱いとされる企業への主張も継続しており、グローバルな脅威が常に日本にも影響を及ぼす可能性を示しています。</p>
+  <h4>3. What to do (推奨される対策)</h4>
+  <p>このような状況下では、基本的なセキュリティ対策の徹底が不可欠です。具体的には、<strong>アクセス権限</strong>の厳格な管理、定期的な<strong>バックアップ</strong>とその復旧テスト、そして全ての外部接続アカウントに対する<strong>多要素認証</strong>の導入が強く推奨されます。また、サプライチェーンリスクを軽減するため、取引先とのセキュリティ要件の確認も重要です。不審な活動を早期に検知できるよう、システムログの継続的な<strong>ログ監査</strong>体制を強化し、インシデント発生時の対応計画を定期的に見直すことが求められます。</p>
 </section>
 <!-- DAILY_REPORT_END -->
 
