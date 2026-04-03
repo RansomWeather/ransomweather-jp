@@ -126,11 +126,6 @@
 <section class="card history-card">
       <h2>過去7日間のランサムウェア天気</h2>
       <div class="history-forecast">
-        <a class="history-day cloudy" href="reports/2026-03-29-ransomweather.html">
-          <div class="history-day-date">29(日)</div>
-          <div class="history-day-icon">☁</div>
-          <div class="history-day-label">落ち着いた状態</div>
-        </a>
         <a class="history-day sunny" href="reports/2026-03-30-no-incident.html">
           <div class="history-day-date">30(月)</div>
           <div class="history-day-icon">☀</div>
@@ -156,25 +151,70 @@
           <div class="history-day-icon">☀</div>
           <div class="history-day-label">新規被害なし</div>
         </a>
+        <a class="history-day storm" href="reports/2026-04-04-ransomweather.html">
+          <div class="history-day-date">4(土)</div>
+          <div class="history-day-icon">⛈</div>
+          <div class="history-day-label">被害主張あり</div>
+        </a>
       </div>
     </section>
 <!-- HISTORY_REPORT_END -->
 
     <!-- DAILY_REPORT_START -->
 <section class="card">
-  <h2>本日のランサムウェア天気 <span>☀</span></h2>
-  <p>2026年04月03日時点の観測では、日本関連の新たなランサムウェア被害は確認されていません。</p>
-  <p>
-検知されたランサムウェア被害（攻撃者の主張ベース）<br>
-・現時点で日本関連の新たなランサムウェア被害は確認されていないとされています。<br>
-<br>
-現時点では大きな動きは見られていないものの、攻撃は継続していると見られており、<br>
-基本的なバックアップやアクセス権限管理などの対策は引き続き重要とされています。
-  </p>
-  <div class="footer-note">
-    ※ 本ページの内容は公開 OSINT および攻撃者サイトの主張ベースの情報を AI で自動分析したものであり、
-    事実関係が確定したものではありません。断定ではなく、あくまで注意喚起としてご覧ください。
-  </div>
+  <h2>本日のランサムウェア天気 ⛈</h2>
+  <p>2026年04月04日現在、日本のランサムウェア天気は「嵐」と見られています。医療機関への被害主張が複数確認されており、社会インフラへの影響が懸念される非常に厳しい状況です。</p>
+</section>
+<section class="card">
+  <h3>日本関連の被害主張（2026年04月04日時点）</h3>
+  <p>攻撃者サイト上で主張されている日本関連のランサムウェア被害は以下の通りです。これらの情報は攻撃者側の主張に基づくものであり、事実関係の確認には時間を要する場合があります。</p>
+  <table>
+    <thead>
+      <tr>
+        <th>被害組織名</th>
+        <th>業種</th>
+        <th>攻撃グループ</th>
+        <th>主張される影響</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Whiskey & Co., Inc.</td>
+        <td>小売</td>
+        <td>Krybit</td>
+        <td>データ窃取を主張しているが、詳細は不明とされる</td>
+      </tr>
+      <tr>
+        <td>Nippon Medical School Musashi Kosugi Hospital</td>
+        <td>医療機関</td>
+        <td>Netrunner</td>
+        <td>患者情報を含むデータが窃取されたと主張</td>
+      </tr>
+      <tr>
+        <td>Shiraume Hospital</td>
+        <td>医療機関</td>
+        <td>Netrunner</td>
+        <td>患者情報を含むデータが窃取されたと主張</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section class="card">
+  <h3>Threat Intelligence Analyst の視点</h3>
+  <h4>1. What it means（何が起きているか）</h4>
+  <p>2026年04月04日現在、日本関連のランサムウェア被害主張において、特に医療機関への攻撃が集中している状況が観測されています。複数の病院が攻撃グループ「Netrunner」による被害を主張されており、患者情報を含む機密データの窃取が懸念されています。これは、単一の企業への攻撃に留まらず、社会インフラとしての医療提供体制全体への影響が示唆される、非常に厳しい「嵐」の状況と見られます。</p>
+  <h4>2. So what（それが何を意味するか）</h4>
+  <p>医療機関への攻撃は、患者のプライバシー侵害だけでなく、医療サービスの停止や遅延を引き起こす可能性があります。また、医療機関は多くのサプライヤーや連携機関と繋がっているため、サプライチェーン全体への波及リスクも無視できません。攻撃グループが特定の業種に狙いを定めている可能性も示唆されており、同業他社は特に警戒を強める必要があります。</p>
+  <h4>3. What to do（取るべき対策）</h4>
+  <p>このような状況下では、基本的なサイバーセキュリティ対策の徹底がこれまで以上に重要です。具体的には、以下の点を確認・強化してください。</p>
+  <ul>
+    <li><strong>アクセス権限の厳格化:</strong> 不要なアクセス権限を削除し、最小権限の原則を徹底する。</li>
+    <li><strong>多要素認証（MFA）の導入:</strong> 外部からのアクセスや特権アカウントにはMFAを必須とする。</li>
+    <li><strong>定期的なバックアップと復旧訓練:</strong> データを定期的にバックアップし、オフラインでの保管も検討する。また、実際に復旧できるか訓練を行う。</li>
+    <li><strong>ログの監視と監査:</strong> 不審なアクセスや活動を早期に検知できるよう、ログの継続的な監視と監査体制を強化する。</li>
+    <li><strong>取引先との連携強化:</strong> サプライチェーンリスクを低減するため、取引先との情報共有やセキュリティ要件の確認を密に行う。</li>
+  </ul>
+  <p>ランサムウェア攻撃は常に進化しており、組織は継続的な脅威インテリジェンスの収集と対策の更新が求められます。特に医療機関においては、患者の生命に関わる情報を取り扱うため、最高レベルのセキュリティ意識と対策が不可欠です。</p>
 </section>
 <!-- DAILY_REPORT_END -->
 
