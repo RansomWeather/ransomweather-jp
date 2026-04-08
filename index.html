@@ -126,11 +126,6 @@
 <section class="card history-card">
       <h2>過去7日間のランサムウェア天気</h2>
       <div class="history-forecast">
-        <a class="history-day sunny" href="reports/2026-04-03-no-incident.html">
-          <div class="history-day-date">3(金)</div>
-          <div class="history-day-icon">☀</div>
-          <div class="history-day-label">新規被害なし</div>
-        </a>
         <a class="history-day storm" href="reports/2026-04-04-ransomweather.html">
           <div class="history-day-date">4(土)</div>
           <div class="history-day-icon">⛈</div>
@@ -156,25 +151,39 @@
           <div class="history-day-icon">☀</div>
           <div class="history-day-label">新規被害なし</div>
         </a>
+        <a class="history-day rainy" href="reports/2026-04-09-ransomweather.html">
+          <div class="history-day-date">9(木)</div>
+          <div class="history-day-icon">🌧</div>
+          <div class="history-day-label">注意が必要</div>
+        </a>
       </div>
     </section>
 <!-- HISTORY_REPORT_END -->
 
     <!-- DAILY_REPORT_START -->
 <section class="card">
-  <h2>本日のランサムウェア天気 <span>☀</span></h2>
-  <p>2026年04月08日時点の観測では、日本関連の新たなランサムウェア被害は確認されていません。</p>
-  <p>
-検知されたランサムウェア被害（攻撃者の主張ベース）<br>
-・現時点で日本関連の新たなランサムウェア被害は確認されていないとされています。<br>
-<br>
-現時点では大きな動きは見られていないものの、攻撃は継続していると見られており、<br>
-基本的なバックアップやアクセス権限管理などの対策は引き続き重要とされています。
-  </p>
-  <div class="footer-note">
-    ※ 本ページの内容は公開 OSINT および攻撃者サイトの主張ベースの情報を AI で自動分析したものであり、
-    事実関係が確定したものではありません。断定ではなく、あくまで注意喚起としてご覧ください。
-  </div>
+  <h2>本日のランサムウェア天気 🌧</h2>
+  <p>2026年04月09日現在、日本のランサムウェア天気は「雨」と見られています。日本本社を置く製造業の企業が攻撃者サイト上で被害を主張されており、関連業界への注意喚起が求められる状況です。</p>
+</section>
+<section class="card">
+  <h3>観測された被害主張</h3>
+  <p>攻撃者サイト上で主張されている日本関連の被害は以下の通りです。これらの情報は攻撃者側の主張に基づくものであり、事実関係の確認には時間を要する場合があります。</p>
+  <ul>
+    <li><strong>被害企業名:</strong> Aichi Electric</li>
+    <li><strong>ドメイン:</strong> aichidenki.jp</li>
+    <li><strong>業種:</strong> 製造業</li>
+    <li><strong>攻撃グループ:</strong> TheGentlemen</li>
+    <li><strong>主張される影響:</strong> ランサムウェア攻撃を受けたとされるが、具体的な被害内容は不明</li>
+  </ul>
+</section>
+<section class="card">
+  <h3>Threat Intelligence Analyst の視点</h3>
+  <h4>1. What it means (状況の解釈)</h4>
+  <p>本日、日本本社を置く製造業の企業がランサムウェア攻撃の被害を主張されたことは、国内のサプライチェーン全体に影響を及ぼす可能性を示唆しています。製造業は、その特性上、多くの取引先との連携が不可欠であり、一つの企業の被害が広範囲に波及するリスクを常に抱えています。攻撃グループ「TheGentlemen」による主張は、特定の業種を狙った標的型攻撃の可能性も示唆しており、同業他社は特に警戒が必要です。</p>
+  <h4>2. So what (それが意味すること)</h4>
+  <p>この状況は、ランサムウェア攻撃が特定の業種に集中する傾向があることを改めて浮き彫りにしています。特に製造業においては、OT/IT融合環境の複雑性や、古いシステムが残存しているケースも多く、攻撃者にとって魅力的な標的となりやすいと考えられます。また、取引先経由での侵入（サプライチェーン攻撃）のリスクも高まっており、自社だけでなく、ビジネスパートナー全体のセキュリティ対策レベルが問われる事態となっています。</p>
+  <h4>3. What to do (推奨される対策)</h4>
+  <p>このような「雨」の状況下では、基本的なセキュリティ対策の徹底が最も重要です。具体的には、<strong>多要素認証（MFA）</strong>の導入によるアクセス権限の強化、定期的な<strong>バックアップ</strong>の実施と復旧手順の確認、そして不審な通信や挙動を早期に検知するための<strong>ログ監査</strong>の強化が不可欠です。また、取引先との情報共有体制を構築し、サプライチェーン全体のセキュリティレベル向上に取り組むことが、被害の連鎖を防ぐ上で極めて重要となります。常に最新の脅威情報を収集し、自社の防御態勢を見直すことを推奨します。</p>
 </section>
 <!-- DAILY_REPORT_END -->
 
